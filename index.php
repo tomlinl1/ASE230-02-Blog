@@ -1,5 +1,5 @@
 <?php
-$blogs = {
+$blogs = [
     'post1' => [
         'title'=> 'Gaming',
         'content' => 'Lipsum',
@@ -18,7 +18,7 @@ $blogs = {
         'author' => 'Michael Hoffmeier',
         'date' => '9/15/2024'
     ]
-}
+]
 ?>
 <html>
     <head>
