@@ -1,18 +1,18 @@
 <?php
 $blogs = [
-    'post1' => [
+    [
         'title'=> 'Gaming',
         'content' => 'Lipsum',
         'author' => 'Landen Tomlin',
         'date' => '9/16/2024'
     ],
-    'post2' => [
+    [
         'title'=> 'Weightlifting',
         'content' => 'Lipsum',
         'author' => 'Josh Harris',
         'date' => '9/14/2024'
     ],
-    'post3' => [
+    [
         'title'=> 'Cybersecurity',
         'content' => 'Lipsum',
         'author' => 'Michael Hoffmeier',
