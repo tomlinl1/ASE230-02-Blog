@@ -27,7 +27,9 @@ $blogs = [
     <body>
         <h1>Our Blogs</h1>
         <?php for($i=0;$i<count($blogs); $i++) { ?>
-            <?php echo '<a href="detail.php?post_id='.$i.'">'.$blogs[$i]['title'].'</a>'?>
+            <ul>
+            <?php echo '<li><a href="detail.php?post_id='.$i.'">'.$blogs[$i]['title'].'</a></li>'?>
+        </ul>
         <?php } ?>
     </body>
 </html>
