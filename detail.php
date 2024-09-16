@@ -21,3 +21,8 @@ $blogs = [
     ]
 ]
 ?>
+<html>
+    <head>
+        <title><?=$blogs[$i]['title'].' by '.$blogs[$i]['author']?></title>
+    </head>
+</html>
