@@ -46,13 +46,15 @@ $blogs = [
     <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
         <h1>Our Blogs</h1>
     </div>
+    <br>
     <div class="container text-center">
         <div class="row align-items-center">
             <div class="col">
                 <?php for($i=0;$i<count($blogs); $i++) { ?> 
                     <div class="p-5 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
                         <?= '<h3><a href="detail.php?post_id='.$i.'">'.$blogs[$i]['title'].'</a></h3>'?>
-                    </div>        
+                    </div>
+                    <br>        
                 <?php } ?>
             </div>
         </div>
