@@ -1,5 +1,6 @@
 <?php
-$blogs = [
+/*
+$bloggs = [
         [
             'title'=> 'Gaming',
             'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -30,7 +31,13 @@ $blogs = [
             'author' => 'Michael Hoffmeier',
             'date' => '9/15/2024'
         ]
-    ]
+        ]; */
+$infile = file_get_contents("posts.json");
+
+ $json = json_decode($infile, true);
+ $blogs = $json;
+
+ var_dump($json);
 ?>
 <!doctype html>
 <html lang="en" class="p-3 mb-2 bg-secondary text-white">
@@ -50,7 +57,7 @@ $blogs = [
     <div class="container text-center">
         <div class="row align-items-center">
             <div class="col">
-                <?php for($i=0;$i<count($blogs); $i++) { ?> 
+                <?php for($i=3;$i<count($blogs); $i++) { ?> 
                     <div class="p-5 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
                         <?= '<h3><a href="detail.php?post_id='.$i.'">'.$blogs[$i]['title'].'</a></h3>'?>
                     </div>
