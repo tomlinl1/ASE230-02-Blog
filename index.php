@@ -1,5 +1,5 @@
 <?php
-$blogs = [
+/*$blogs = [
         [
             'title'=> 'Gaming',
             'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -30,7 +30,10 @@ $blogs = [
             'author' => 'Michael Hoffmeier',
             'date' => '9/15/2024'
         ]
-    ]
+    ]*/
+    $string=file_get_contents('blogs.json');
+    $php_array=json_decode($string, true);
+    $blogs=$php_array;
 ?>
 <!doctype html>
 <html lang="en" class="p-3 mb-2 bg-secondary text-white">
