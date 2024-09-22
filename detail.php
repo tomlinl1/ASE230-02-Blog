@@ -33,9 +33,9 @@ $i=$_GET['post_id'];
     ]
     ];*/
     
-    $string=file_get_contents('blogs.json');
-    $php_array=json_decode($string, true);
-    $blogs=$php_array;
+    require_once('json_function.php');
+    require_once('visitor_function.php');
+   
 ?>
 <!doctype html>
 <html lang="en" class="p-3 mb-2 bg-secondary text-white">
@@ -53,6 +53,7 @@ $i=$_GET['post_id'];
             <h3><?='by: '.$blogs[$i]['author']?></h3>
             <h4><?='Posted on: '.$blogs[$i]['date']?></h4>
             <p><?=$blogs[$i]['content']?></p>
+            <p><strong>Visitor Count: <?=$visit_count?></strong></p>
             <button type="button" class="btn btn-light"><a style="text-decoration: none" href="index.php">Return To Home</a></button>
         </div>
     </div>

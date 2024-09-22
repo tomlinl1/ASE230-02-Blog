@@ -31,9 +31,7 @@
             'date' => '9/15/2024'
         ]
     ]*/
-    $string=file_get_contents('blogs.json');
-    $php_array=json_decode($string, true);
-    $blogs=$php_array;
+    require_once('json_function.php');
 ?>
 <!doctype html>
 <html lang="en" class="p-3 mb-2 bg-secondary text-white">
